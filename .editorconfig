@@ -1,0 +1,30 @@
+# 9.X版本开始，WebStorm原生就内置了EditorConfig，不需要装任何插件。
+# 文档：https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+# Denotes whether file should end with a newline. 是否应该以换行符结束
+insert_final_newline = true
+# Remove whitespace at the end of lines
+trim_trailing_whitespace = true
+indent_style = space
+max_line_length = 120
+indent_size = 2
+
+[*.{js, jsx, ts, tsx, vue}]
+indent_size = 2
+
+[*.{html, css, scss, styl}]
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.{json, yml, yaml}]
+indent_size = 2
+
+[*.md]
+# markdown格式一般以两个空格作为换行符的，所以要设置trim_trailing_whitespace为false
+trim_trailing_whitespace = false
