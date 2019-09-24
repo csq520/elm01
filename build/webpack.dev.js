@@ -8,7 +8,7 @@ const devConfig = {
   devServer: {
     contentBase: './dist',
     open: true,
-    port: 8080,
+    port: 8070,
     hot: true,
   },
   module: {
@@ -26,7 +26,7 @@ const devConfig = {
         'postcss-loader',
       ],
     }, {
-      test: /\.styl$/,
+      test: /\.stylus$/,
       use: [
         'style-loader',
         {
